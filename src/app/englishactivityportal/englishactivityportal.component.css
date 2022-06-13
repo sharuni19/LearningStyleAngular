@@ -1,0 +1,38 @@
+.english-activity-card {
+  box-shadow: rgb(0 0 0 / 20%) 0px 6px 16px 0px;
+  width: 800px;
+}
+.english-activity-level-title {
+  background-color: var(--card-shadow-2);
+}
+.english-activity-description {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
+  align-items: center;
+}
+.english-activity-favorite-icon {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 353px;
+}
+.english-activity-button {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: auto;
+}

@@ -1,0 +1,110 @@
+<mat-toolbar>
+  <span>Learning Style Detection</span>
+  <span class="spacer"></span>
+  <div class="dashboard-icons">
+    <div class="rating-icon">
+      <button
+        mat-icon-button
+        aria-label="Example icon-button with heart icon"
+        (click)="openRatingDialog()"
+      >
+        <mat-icon>stars</mat-icon>
+        Leave a Rating
+      </button>
+    </div>
+    <div class="progress-icon">
+      <mat-progress-spinner
+        class="spinner-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value"
+        diameter="40"
+      >
+      </mat-progress-spinner>
+      <!-- <img src="assets/TrophyCup.svg" alt="Trophy Cup" /> -->
+    </div>
+    <div class="user-icon">
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example
+      icon-button with heart icon"
+      >
+        <img src="assets/Useravartar.svg" alt="User Avatar" />
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item>Sign Out</button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>
+<mat-accordion class="dashboard-accordion">
+  <mat-expansion-panel hideToggle [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h2>Subjects</h2>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="subjects-list">
+      <div class="english-subject">
+        <mat-card class="english-card">
+          <mat-card-header>
+            <mat-card-title>
+              <h2>English</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <img
+              mat-card-image
+              src="assets/English.jpg"
+              alt="English subject"
+            />
+          </mat-card-content>
+          <mat-card-footer>
+            <mat-progress-bar
+              mode="determinate"
+              [value]="100"
+            ></mat-progress-bar>
+          </mat-card-footer>
+        </mat-card>
+      </div>
+      <div class="computerscience">
+        <mat-card class="computerscience-card">
+          <mat-card-header>
+            <mat-card-title>
+              <h2>Computer Science</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <img
+              mat-card-image
+              src="assets/ComputerScience.png"
+              alt="Computer Science subject"
+            />
+          </mat-card-content>
+          <mat-card-footer>
+            <mat-progress-bar
+              mode="determinate"
+              [value]="100"
+            ></mat-progress-bar>
+          </mat-card-footer>
+        </mat-card>
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-divider></mat-divider>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Favorite Levels in English </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+  <mat-divider></mat-divider>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Favorite Levels in Computer Science </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+</mat-accordion>

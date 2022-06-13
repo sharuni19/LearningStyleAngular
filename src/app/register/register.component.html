@@ -1,0 +1,91 @@
+<mat-card class="register-card">
+  <mat-card-title class="register-card-title">REGISTER</mat-card-title>
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel [expanded]="true" class="expansion-panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title> Personal data </mat-panel-title>
+        <mat-panel-description>
+          Enter Your First and Last Name
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>First name</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Last name</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel [expanded]="true" class="expansion-panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title> Education Details </mat-panel-title>
+        <mat-panel-description>
+          Enter Your Education Details
+          <mat-icon>school</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Degree</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Course</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="true" class="expansion-panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title> Day of the trip </mat-panel-title>
+        <mat-panel-description>
+          Inform the date you wish to travel
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Date</mat-label>
+          <input
+            matInput
+            [matDatepicker]="picker"
+            (focus)="picker.open()"
+            readonly
+          />
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Age</mat-label>
+          <input matInput type="number" min="1" />
+        </mat-form-field>
+      </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel [expanded]="true" class="expansion-panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title> Email & Password </mat-panel-title>
+        <mat-panel-description>
+          Enter Your Email and Password
+          <mat-icon>email</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" />
+        </mat-form-field>
+      </div>
+    </mat-expansion-panel>
+    <button mat-raised-button color="primary" type="submit">Register</button>
+  </mat-accordion>
+</mat-card>

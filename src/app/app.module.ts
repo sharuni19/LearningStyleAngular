@@ -23,7 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { EnglishactivityportalComponent } from './englishactivityportal/englishactivityportal.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -51,6 +51,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
+    EnglishactivityportalComponent,
   ],
   bootstrap: [AppComponent],
 })
