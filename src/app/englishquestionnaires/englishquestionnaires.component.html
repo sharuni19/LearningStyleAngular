@@ -1,0 +1,220 @@
+<div class="english-questionnaire-container">
+  <mat-card>
+    <mat-card-title>What Does VARK Stands For ?</mat-card-title>
+    <mat-card-content>
+      <mat-list role="list">
+        <mat-list-item role="listitem"
+          >V- Visual ( Learning by seeing)</mat-list-item
+        >
+        <mat-list-item role="listitem"
+          >A- Aural ( Learning by speaking)</mat-list-item
+        >
+        <mat-list-item role="listitem"
+          >R- Read/write (Learning by Reading and writing)</mat-list-item
+        >
+        <mat-list-item role="listitem"
+          >K- kinaesthetic (Learning by doing,acting and real-life
+          examples)</mat-list-item
+        >
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>What kind of book would you like to read?</mat-card-title>
+    <mat-card-content>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="question-radio-group"
+        [(ngModel)]="questionOneAnswer"
+      >
+        <mat-radio-button class="question-radio-button"
+          >A book with lots of pictures in it
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >A book with CD
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >A book with lots of answers to practice
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >A book with word searches or crossword puzzles
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title
+      >When you are not sure how to spell a word, what are you most likely to
+      do?</mat-card-title
+    >
+    <mat-card-content>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="question-radio-group"
+        [(ngModel)]="questionTwoAnswer"
+      >
+        <mat-radio-button class="question-radio-button"
+          >To understand the spelling by watching video and create mind map
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Spell it out loud to see if it sounds right
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Write it down to see if it looks right
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Trace the letters in the air (finger spelling)
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title
+      >What's the best way for you to study for a test?</mat-card-title
+    >
+    <mat-card-content>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="question-radio-group"
+        [(ngModel)]="questionThreeAnswer"
+      >
+        <mat-radio-button class="question-radio-button"
+          >The book or your notes and review pictures or charts
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Have someone ask you questions that you can answer out loud
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Read and write the answer for the questions and practice
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Make up index cards that you can review
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title
+      >What is the best way for you to remember a Grammar?</mat-card-title
+    >
+    <mat-card-content>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="question-radio-group"
+        [(ngModel)]="questionFourAnswer"
+      >
+        <mat-radio-button class="question-radio-button"
+          >Create flash cards to remeber a sentence
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Listen the sentence carefully by audio type of questions
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Write it down in the notepad and read
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Make Physical interactions and learn
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>How you will be memorize the poem?</mat-card-title>
+    <mat-card-content>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="question-radio-group"
+        [(ngModel)]="questionFiveAnswer"
+      >
+        <mat-radio-button class="question-radio-button"
+          >Use picture books to Visualize
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Say it loud and record and listen twice
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Read and write the poem twice
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Do actions and play games related to the poem
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title
+      >What type method you will be learn for english subject?</mat-card-title
+    >
+    <mat-card-content>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="question-radio-group"
+        [(ngModel)]="questionSixAnswer"
+      >
+        <mat-radio-button class="question-radio-button"
+          >Studying on your own using different tools like books, magazines,
+          comics
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Listen and read by subscribing English subject youtube channel
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Read and write what you have learn
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Go to classes
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title
+      >What is the best way to learn lessons for English
+      subjects?</mat-card-title
+    >
+    <mat-card-content>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="question-radio-group"
+        [(ngModel)]="questionSevenAnswer"
+      >
+        <mat-radio-button class="question-radio-button"
+          >Study phrases not words and create charts or mind map
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Learn by listening to the video
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Read and write the whole lessons and understand the concept
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Take an online lesson with activities
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>How do you learn comprehension?</mat-card-title>
+    <mat-card-content>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="question-radio-group"
+        [(ngModel)]="questionEightAnswer"
+      >
+        <mat-radio-button class="question-radio-button"
+          >Picture of the things that are being described in the text
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Ask questions about the text and answer and say it loud
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Summarize the main points of a text and practice
+        </mat-radio-button>
+        <mat-radio-button class="question-radio-button"
+          >Reading frequently will help to learn new words and interpret
+          different meanings
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
+</div>

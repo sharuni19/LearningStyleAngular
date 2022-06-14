@@ -28,6 +28,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EnglishactivityportalComponent } from './englishactivityportal/englishactivityportal.component';
+import { EnglishquestionnairesComponent } from './englishquestionnaires/englishquestionnaires.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -60,6 +61,7 @@ import { EnglishactivityportalComponent } from './englishactivityportal/englisha
     RegisterComponent,
     DashboardComponent,
     EnglishactivityportalComponent,
+    EnglishquestionnairesComponent,
   ],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,20 @@
+.english-questionnaire-container {
+  align-items: centrer;
+  background-color: rgb(240, 235, 248);
+  padding-top:16px;
+  padding-bottom:9px
+}
+mat-card {
+  max-width: 520px;
+  margin: 2em auto;
+  text-align: left;
+}
+.question-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+.question-radio-button {
+  margin: 5px;
+}
