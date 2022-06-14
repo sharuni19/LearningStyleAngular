@@ -17,6 +17,10 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatListModule } from '@angular/material/list';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +28,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EnglishactivityportalComponent } from './englishactivityportal/englishactivityportal.component';
+import { EnglishquestionnairesComponent } from './englishquestionnaires/englishquestionnaires.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -45,6 +50,10 @@ import { EnglishactivityportalComponent } from './englishactivityportal/englisha
     MatExpansionModule,
     MatDividerModule,
     MatProgressBarModule,
+    MatCheckboxModule,
+    MatListModule,
+    MatRadioModule,
+    MatGridListModule,
   ],
   declarations: [
     AppComponent,
@@ -52,6 +61,7 @@ import { EnglishactivityportalComponent } from './englishactivityportal/englisha
     RegisterComponent,
     DashboardComponent,
     EnglishactivityportalComponent,
+    EnglishquestionnairesComponent,
   ],
   bootstrap: [AppComponent],
 })
