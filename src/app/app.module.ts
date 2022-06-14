@@ -17,6 +17,10 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatListModule } from '@angular/material/list';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -45,6 +49,10 @@ import { EnglishactivityportalComponent } from './englishactivityportal/englisha
     MatExpansionModule,
     MatDividerModule,
     MatProgressBarModule,
+    MatCheckboxModule,
+    MatListModule,
+    MatRadioModule,
+    MatGridListModule,
   ],
   declarations: [
     AppComponent,
