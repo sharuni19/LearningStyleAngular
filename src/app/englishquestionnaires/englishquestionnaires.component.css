@@ -1,8 +1,9 @@
 .english-questionnaire-container {
   align-items: centrer;
   background-color: rgb(240, 235, 248);
-  padding-top:16px;
-  padding-bottom:9px
+  padding-top: 16px;
+  padding-bottom: 9px;
+  text-align: center;
 }
 mat-card {
   max-width: 520px;
@@ -17,4 +18,31 @@ mat-card {
 }
 .question-radio-button {
   margin: 5px;
+}
+.kinestic-content {
+  flex-grow: 1;
+}
+.kinestic-container {
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  min-width: 1024px;
+  max-width: 1240px;
+  width: 100%;
+}
+.kinestic-sub-container {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+}
+.kinestic-list {
+  color: #f3f7f7;
+  font-size: 14px;
+}
+.example-box.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-chip .cdk-drop-list-dragging {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }

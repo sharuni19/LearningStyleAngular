@@ -21,6 +21,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatListModule } from '@angular/material/list';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -29,6 +30,7 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EnglishactivityportalComponent } from './englishactivityportal/englishactivityportal.component';
 import { EnglishquestionnairesComponent } from './englishquestionnaires/englishquestionnaires.component';
+import { RatingComponent } from './rating/rating.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -54,6 +56,7 @@ import { EnglishquestionnairesComponent } from './englishquestionnaires/englishq
     MatListModule,
     MatRadioModule,
     MatGridListModule,
+    MatChipsModule,
   ],
   declarations: [
     AppComponent,
@@ -62,6 +65,7 @@ import { EnglishquestionnairesComponent } from './englishquestionnaires/englishq
     DashboardComponent,
     EnglishactivityportalComponent,
     EnglishquestionnairesComponent,
+    RatingComponent,
   ],
   bootstrap: [AppComponent],
 })
